@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "./components/Header";
 import Link from "next/link";
 export default function index() {
@@ -8,7 +9,7 @@ export default function index() {
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 ">
           <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
             <div className="py-3 px-2 text-black text-center">
-              <img className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img>
+              <Image width={"100%"} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
               <div className="grid grid-cols-2  justify-between">
                 <div className="text-start ">
                   <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
@@ -23,7 +24,7 @@ export default function index() {
           </div>
           <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
           <div className="py-3 px-2 text-black text-center">
-              <img className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img>
+              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
               <div className="grid grid-cols-2  justify-between">
                 <div className="text-start ">
                   <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
@@ -38,7 +39,7 @@ export default function index() {
           </div>
           <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
           <div className="py-3 px-2 text-black text-center">
-              <img className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img>
+              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
               <div className="grid grid-cols-2  justify-between">
                 <div className="text-start ">
                   <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
@@ -53,7 +54,7 @@ export default function index() {
           </div>
           <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
           <div className="py-3 px-2 text-black text-center">
-              <img className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img>
+              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
               <div className="grid grid-cols-2  justify-between">
                 <div className="text-start ">
                   <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
