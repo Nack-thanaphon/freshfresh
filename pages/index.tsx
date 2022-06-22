@@ -1,94 +1,130 @@
-import Image from "next/image";
-import Header from "./components/Header";
-import Link from "next/link";
+import React from "react";
+import { Button } from "@mui/material";
+import Image from "next/dist/client/image";
+import Header from "./components/header";
+import Card from "./components/card";
+import Footer from "./components/footer";
+
 export default function index() {
   return (
-    <div className="container-fluid h-full">
+    <>
       <Header />
-      <div className="h-full p-10 ">
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 ">
-          <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
-            <div className="py-3 px-2 text-black text-center">
-              <Image width={"100%"} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
-              <div className="grid grid-cols-2  justify-between">
-                <div className="text-start ">
-                  <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
-                  <small>ButterFly Pea</small>
-                  <small>สมุนภัยบำรุงร่างกาย</small>
-                </div>
-                <div className="">
-                  <h1>39.-</h1>
-                </div>
-              </div>
+      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full p-10 sm:mx-5 sm:gap-5 ">
+        <div className="col-span-2 my-auto ">
+          <div className="sm:text-9xl invisible sm:visible font-bold">
+            เฟรช
+            <span className="text-green-400">เฟรช</span>
+          </div>
+          <div className="text-3xl py-5">เราคือใคร ?</div>
+          <div className="text-secondary relaxed">
+            <b>ร้านขายน้ำสมุนไพร</b> ออแกนิค
+            เริ่มต้นจากการทำดื่มเองและแจกจ่ายให้กับผู้คนรอบข้าง
+            จุดเด่นคือกาารทำสดใหม่ทุกออเดอร์ เลือกสรรวัตุดิบที่สดใหม่
+            จึงอาจจะต้องมีการออเดอร์มา่กอน 2-3 วัน
+            แต่ก็เป็นเรื่องของกระบวนการลิตที่ เน้นคุณภาพ มากกว่าปริมาณ รสชาติ
+            มีความชื่นชอบในรสชาติ ที่ไม่หวานมาก เน้นสุขภาพดี เราเลยคิดว่า
+            ถ้าคนที่รักษ์สุขภาพได้ดื่มคงจะเป็นเรื่องดี ตอนนี้ร้านเรา
+            รับจัดน้ำถวายพระ งานบุญ งานบวช งานสีดำ งานต่างๆ
+            และรับจัดกล่องอาหารสัมนาและการประชุม สามารถกดสั่งซื้อได้ที่ หรือ
+            ต้องการดูรีวิวสามารถกดดูได้ตามด่านล่างนี้เลย
+            เรามีบริการจัดส่งนอกสถานที่ด้วยน้าา ศิริราช ส่ง ฟรีจ้า
+          </div>
+          <Button variant="contained" className="bg-green-400 w-5/5 my-5">
+            <div className="text-lg">อ่านรีวิวร้านเรา</div>
+          </Button>
+        </div>
+        <div className="col-span-1 mx-auto invisible sm:visible ">
+          <Image
+            src="https://images.unsplash.com/photo-1587302256613-0612040af6b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+            width={450}
+            height={450}
+          />
+        </div>
+      </div>
+      <div className="grid sm:grid-cols-3 py-3 gap-5 sm:px-20 sm:mx-15">
+        <div className="shadow-lg py-10">
+          <div className="grid-cols p-5">
+            <div className="text-3xl font-bold text-green-400">คุณภาพ</div>
+            <div className="text-tiny font-thin">
+              Lorem ipsum dolor sit amet.
             </div>
           </div>
-          <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
-          <div className="py-3 px-2 text-black text-center">
-              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
-              <div className="grid grid-cols-2  justify-between">
-                <div className="text-start ">
-                  <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
-                  <small>ButterFly Pea</small>
-                  <small>สมุนภัยบำรุงร่างกาย</small>
-                </div>
-                <div className="">
-                  <h1>39.-</h1>
-                </div>
-              </div>
+        </div>
+        <div className="shadow-lg py-10">
+          <div className="grid-cols p-5">
+            <div className="text-3xl font-bold text-green-400">
+              วัตถุดิบสดใหม่
+            </div>
+            <div className="text-tiny font-thin">
+              Lorem ipsum dolor sit amet.
             </div>
           </div>
-          <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
-          <div className="py-3 px-2 text-black text-center">
-              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
-              <div className="grid grid-cols-2  justify-between">
-                <div className="text-start ">
-                  <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
-                  <small>ButterFly Pea</small>
-                  <small>สมุนภัยบำรุงร่างกาย</small>
-                </div>
-                <div className="">
-                  <h1>39.-</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card bg-white-300 drop-shadow-lg h-50 w-full rounded shadow-lg">
-          <div className="py-3 px-2 text-black text-center">
-              <Image width={100} height="100%" alt="" className="h-auto w-full pb-3" src="https://images.unsplash.com/photo-1620417981458-1c9990f17b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
-              <div className="grid grid-cols-2  justify-between">
-                <div className="text-start ">
-                  <h1 className="text-blue-300">น้ำอัญชันมะนาว</h1>
-                  <small>ButterFly Pea</small>
-                  <small>สมุนภัยบำรุงร่างกาย</small>
-                </div>
-                <div className="">
-                  <h1>39.-</h1>
-                </div>
-              </div>
+        </div>
+        <div className="shadow-lg py-10">
+          <div className="grid-cols p-5">
+            <div className="text-3xl font-bold text-green-400">ดื่มง่าย</div>
+            <div className="text-tiny font-thin">
+              Lorem ipsum dolor sit amet.
             </div>
           </div>
         </div>
       </div>
-
-      <footer className="py-5 bg-gradient-to-r from-green-400 to-green-900">
-        <div className="p-5 sm:text-center">
-          <div className="py-5">
-            <h1 className="text-3xl font-bold text-white ">
-              Heathy & Delivery
-            </h1>
-            <small className="text-white">
-              ถนนจรัญสนิทวงศ์ แขวงบางขุนศรี เขตบางกอกน้อย กรุงเทพมหานคร 10700
-            </small>
-          </div>
-          <div className="sm:flex text-start justify-center text-white">
-            <p className="px-1">Tel : 085-6644-6929</p>
-            <p className="px-1">Line : FreshFresh</p>
-            <p className="px-1">
-              Website : <Link href="">FreshFresh.com</Link>
-            </p>
-          </div>
+      <div className="sm:my-30">
+        <div className="py-5 ">
+          <button className="text-3xl text-start font-bold p-5">
+            เมนูร้านเรา
+          </button>
         </div>
-      </footer>
-    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="py-5 ">
+          <button className="text-3xl text-start font-bold p-5">
+            โปรโมชั่น
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="py-5 ">
+          <button className="text-3xl text-start font-bold p-5">
+            ชุดอาหาร
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="py-5 ">
+          <button className="text-3xl text-start font-bold p-5">
+            รีวิวจากลูกค้า
+          </button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
