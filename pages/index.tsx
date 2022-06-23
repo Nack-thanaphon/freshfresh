@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
-import Header from "./components/Header";
-import Card_order from "./components/Card_order";
+import Header from './components/Header';
+// import Card_order from './components/Card_order';
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 
@@ -86,12 +86,7 @@ export default function index() {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
+         
         </div>
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
