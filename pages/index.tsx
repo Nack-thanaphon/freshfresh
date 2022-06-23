@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Card_order from "./components/Card_order";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
