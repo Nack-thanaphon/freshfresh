@@ -2,9 +2,9 @@ import React from "react";
 import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
 import Header from "./components/header";
-import Card_order from "./components/card_order";
-import Card from "./components/card";
-import Footer from "./components/footer";
+import Card_order from "./components/Card_order";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 export default function index() {
   return (
