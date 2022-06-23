@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
 import Header from "./components/header";
+import Card_order from "./components/card_order";
 import Card from "./components/card";
 import Footer from "./components/footer";
 
@@ -16,17 +17,25 @@ export default function index() {
             <span className="text-green-400">เฟรช</span>
           </div>
           <div className="text-3xl py-5">เราคือใคร ?</div>
-          <div className="text-secondary relaxed">
+          <div className="text-secondary selection:bg-fuchsia-300 selection:text-fuchsia-900">
             <b>ร้านขายน้ำสมุนไพร</b> ออแกนิค
             เริ่มต้นจากการทำดื่มเองและแจกจ่ายให้กับผู้คนรอบข้าง
+            <br />
             จุดเด่นคือกาารทำสดใหม่ทุกออเดอร์ เลือกสรรวัตุดิบที่สดใหม่
             จึงอาจจะต้องมีการออเดอร์มา่กอน 2-3 วัน
-            แต่ก็เป็นเรื่องของกระบวนการลิตที่ เน้นคุณภาพ มากกว่าปริมาณ รสชาติ
-            มีความชื่นชอบในรสชาติ ที่ไม่หวานมาก เน้นสุขภาพดี เราเลยคิดว่า
-            ถ้าคนที่รักษ์สุขภาพได้ดื่มคงจะเป็นเรื่องดี ตอนนี้ร้านเรา
+            <br /> แต่ก็เป็นเรื่องของกระบวนการลิตที่ เน้นคุณภาพ มากกว่าปริมาณ
+            รสชาติ
+            <br /> มีความชื่นชอบในรสชาติ ที่ไม่หวานมาก เน้นสุขภาพดี เราเลยคิดว่า
+            ถ้าคนที่รักษ์สุขภาพได้ดื่มคงจะเป็นเรื่องดี
+            <br />
+            <b>การบริการ</b>
+            <br />
             รับจัดน้ำถวายพระ งานบุญ งานบวช งานสีดำ งานต่างๆ
-            และรับจัดกล่องอาหารสัมนาและการประชุม สามารถกดสั่งซื้อได้ที่ หรือ
-            ต้องการดูรีวิวสามารถกดดูได้ตามด่านล่างนี้เลย
+            <br /> และรับจัดกล่องอาหารสัมนาและการประชุม สามารถกดสั่งซื้อได้ที่
+            <br /> หรือ ต้องการดูรีวิวสามารถกดดูได้ตามด่านล่างนี้เลย
+            <br />
+            <b>จัดส่งนอกสถานที่</b>
+            <br />
             เรามีบริการจัดส่งนอกสถานที่ด้วยน้าา ศิริราช ส่ง ฟรีจ้า
           </div>
           <Button variant="contained" className="bg-green-400 w-5/5 my-5">
@@ -43,29 +52,29 @@ export default function index() {
         </div>
       </div>
       <div className="grid sm:grid-cols-3 py-3 gap-5 sm:px-20 sm:mx-15">
-        <div className="shadow-lg py-10">
+        <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
             <div className="text-3xl font-bold text-green-400">คุณภาพ</div>
             <div className="text-tiny font-thin">
-              Lorem ipsum dolor sit amet.
+              สินค้าผลิตทุกวัน จันทร์-ศุกร์
             </div>
           </div>
         </div>
-        <div className="shadow-lg py-10">
+        <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
             <div className="text-3xl font-bold text-green-400">
               วัตถุดิบสดใหม่
             </div>
             <div className="text-tiny font-thin">
-              Lorem ipsum dolor sit amet.
+              วัตถุดิบ สด สะอาด คุณภาพ ดี
             </div>
           </div>
         </div>
-        <div className="shadow-lg py-10">
+        <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
             <div className="text-3xl font-bold text-green-400">ดื่มง่าย</div>
             <div className="text-tiny font-thin">
-              Lorem ipsum dolor sit amet.
+              เน้นการดึงรสชาติของสมุนไพรจริงๆ เพื่อสุขภาพ และความอร่อย
             </div>
           </div>
         </div>
@@ -76,13 +85,13 @@ export default function index() {
             เมนูร้านเรา
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
         </div>
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
