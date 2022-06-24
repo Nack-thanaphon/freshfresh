@@ -84,13 +84,13 @@ export default function index() {
           </div>
         </div>
       </div>
-      <div className="sm:my-30 p-10">
+      <div className="sm:my-30 sm:p-10">
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
             เมนูร้านเรา
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
+        <div className="grid grid-cols-1 m-2 sm:grid-cols-2 gap-3   sm:m-5 text-center">
           <Card_order />
           <Card_order />
           <Card_order />
@@ -111,8 +111,7 @@ export default function index() {
             ชุดอาหาร
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
-          <Card_order />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
           <Card_order />
           <Card_order />
         </div>
@@ -123,6 +122,52 @@ export default function index() {
         </div>
         <div className="grid grid-cols-1  m-5 text-center">
           <Reiview_card />
+        </div>
+        <div className="py-10 ">
+          <button className="text-3xl text-start font-bold p-5">บทความ</button>
+        </div>
+        <div className="grid grid-cols-1  m-5 ">
+          <ul
+            role="list"
+            className="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500"
+          >
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>{" "}
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>{" "}
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>{" "}
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>{" "}
+            <li>
+              <h3 className="text-lg">
+                <span className="text-green-600">Lorem, ipsum.</span> Lorem,
+                ipsum dolor.
+              </h3>
+            </li>
+          </ul>
         </div>
       </div>
       <Footer />
