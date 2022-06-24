@@ -1,8 +1,9 @@
 import React from "react";
 import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
-import Header from './components/Header';
-import Card_order from './components/Card_order';
+import Header from "./components/Header";
+import Card_order from "./components/Card_order";
+import Reiview_card from "./components/Review_card";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 
@@ -10,14 +11,14 @@ export default function index() {
   return (
     <>
       <Header />
-      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full p-10 sm:mx-5 sm:gap-5 ">
+      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full sm:p-10 sm:mx-5 sm:gap-5 ">
         <div className="col-span-2 my-auto ">
           <div className="sm:text-9xl invisible sm:visible font-bold">
             เฟรช
             <span className="text-green-400">เฟรช</span>
           </div>
-          <div className="text-3xl py-5">เราคือใคร ?</div>
-          <div className="text-secondary selection:bg-fuchsia-300 selection:text-fuchsia-900">
+          {/* <div className="text-3xl py-5">เราคือใคร ?</div> */}
+          {/* <div className="text-secondary selection:bg-fuchsia-300 selection:text-fuchsia-900">
             <b>ร้านขายน้ำสมุนไพร</b> ออแกนิค
             เริ่มต้นจากการทำดื่มเองและแจกจ่ายให้กับผู้คนรอบข้าง
             <br />
@@ -37,7 +38,7 @@ export default function index() {
             <b>จัดส่งนอกสถานที่</b>
             <br />
             เรามีบริการจัดส่งนอกสถานที่ด้วยน้าา ศิริราช ส่ง ฟรีจ้า
-          </div>
+          </div> */}
           <Button variant="contained" className="bg-green-400 w-5/5 my-5">
             <div className="text-lg">อ่านรีวิวร้านเรา</div>
           </Button>
@@ -51,13 +52,14 @@ export default function index() {
           />
         </div>
       </div>
-      <div className="grid sm:grid-cols-3 py-3 gap-5 sm:px-20 sm:mx-15">
+      <div className="grid sm:grid-cols-3 py-3 gap-5  sm:px-20 sm:mx-15">
         <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
             <div className="text-3xl font-bold text-green-400">คุณภาพ</div>
             <div className="text-tiny font-thin">
               สินค้าผลิตทุกวัน จันทร์-ศุกร์
             </div>
+            <div className="text-xs text-gray-400">Made Order by Order</div>
           </div>
         </div>
         <div className="shadow-lg py-10 rounded-lg">
@@ -66,39 +68,42 @@ export default function index() {
               วัตถุดิบสดใหม่
             </div>
             <div className="text-tiny font-thin">
-              วัตถุดิบ สด สะอาด คุณภาพ ดี
+              วัตถุดิบ สด สะอาด คุณภาพดี
             </div>
+            <div className="text-xs text-gray-400">Everyday Material</div>
           </div>
         </div>
         <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
             <div className="text-3xl font-bold text-green-400">ดื่มง่าย</div>
             <div className="text-tiny font-thin">
-              เน้นการดึงรสชาติของสมุนไพรจริงๆ เพื่อสุขภาพ และความอร่อย
+              เน้นการดึงรสชาติของสมุนไพรจริงๆ
             </div>
+
+            <div className="text-xs text-gray-400">Real test Herb Drink</div>
           </div>
         </div>
       </div>
-      <div className="sm:my-30">
+      <div className="sm:my-30 p-10">
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
             เมนูร้านเรา
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
-         
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
+          <Card_order />
         </div>
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
             โปรโมชั่น
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
+        <div className="grid grid-cols-1  m-5 text-center">
           <Card_order />
         </div>
         <div className="py-5 ">
@@ -107,25 +112,17 @@ export default function index() {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card_order />
+          <Card_order />
+          <Card_order />
         </div>
-        <div className="py-5 ">
+        <div className="py-10 ">
           <button className="text-3xl text-start font-bold p-5">
             รีวิวจากลูกค้า
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3  m-5 text-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="grid grid-cols-1  m-5 text-center">
+          <Reiview_card />
         </div>
       </div>
       <Footer />

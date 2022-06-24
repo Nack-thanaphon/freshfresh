@@ -4,6 +4,7 @@ export default function Card_order() {
       <div className="md:flex">
         <div className="md:shrink-0">
           <img
+            className="h-48 w-full object-cover md:h-full md:w-48"
             src="https://images.unsplash.com/photo-1655979921395-2316b22235e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80"
             alt="Man looking at item at a store"
           />
