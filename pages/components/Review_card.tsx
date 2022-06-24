@@ -29,7 +29,7 @@ export default function App() {
               alt=""
             />
             <div className="ltr:ml-3 rtl:mr-3 px-10">
-              <p className="text-xs text-lg font-bold text-slate-700 text-start group-hover:text-slate-900">
+              <p className="text-xs text-lg font-bold text-slate-700 mb-3 text-start group-hover:text-slate-900">
                 " ร้านอาหารอร่อยมากๆเลยครับ บริการเยี่ยม พนักงานน่ารัก
                 ราคาไม่แพง "
               </p>
@@ -47,11 +47,11 @@ export default function App() {
               alt=""
             />
             <div className="ltr:ml-3 rtl:mr-3 px-10">
-              <p className="text-xs text-lg font-bold text-slate-700 text-start group-hover:text-slate-900">
+              <p className="text-xs text-lg font-bold text-slate-700 mb-3 text-start group-hover:text-slate-900">
                 " ร้านอาหารอร่อยมากๆเลยครับ บริการเยี่ยม พนักงานน่ารัก
                 ราคาไม่แพง "
               </p>
-              <p className="text-sm font-medium text-slate-500 text-start group-hover:text-slate-700">
+              <p className="text-sm font-medium  text-slate-500 text-start group-hover:text-slate-700">
                 ธนพล กัลปพฤกษ์
               </p>
             </div>

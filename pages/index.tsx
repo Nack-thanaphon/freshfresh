@@ -11,14 +11,14 @@ export default function index() {
   return (
     <>
       <Header />
-      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full sm:p-10 sm:mx-5 sm:gap-5 ">
+      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full sm:p-10 sm:mx-5 sm:gap-5 p-3">
         <div className="col-span-2 my-auto ">
           <div className="sm:text-9xl invisible sm:visible font-bold">
             เฟรช
             <span className="text-green-400">เฟรช</span>
           </div>
-          {/* <div className="text-3xl py-5">เราคือใคร ?</div> */}
-          {/* <div className="text-secondary selection:bg-fuchsia-300 selection:text-fuchsia-900">
+          <div className="text-3xl py-5">เราคือใคร ?</div>
+          <div className="text-secondary selection:bg-fuchsia-300 selection:text-fuchsia-900">
             <b>ร้านขายน้ำสมุนไพร</b> ออแกนิค
             เริ่มต้นจากการทำดื่มเองและแจกจ่ายให้กับผู้คนรอบข้าง
             <br />
@@ -38,12 +38,12 @@ export default function index() {
             <b>จัดส่งนอกสถานที่</b>
             <br />
             เรามีบริการจัดส่งนอกสถานที่ด้วยน้าา ศิริราช ส่ง ฟรีจ้า
-          </div> */}
+          </div>
           <Button variant="contained" className="bg-green-400 w-5/5 my-5">
             <div className="text-lg">อ่านรีวิวร้านเรา</div>
           </Button>
         </div>
-        <div className="col-span-1 mx-auto invisible sm:visible ">
+        <div className="col-span-1 mx-auto hidden sm:block ">
           <Image
             src="https://images.unsplash.com/photo-1587302256613-0612040af6b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             alt=""
@@ -91,12 +91,12 @@ export default function index() {
           </button>
         </div>
         <div className="grid grid-cols-1 m-2 sm:grid-cols-2 gap-3   sm:m-5 text-center">
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
-          <Card_order />
+          <Card_order  />
+          <Card_order  />
+          <Card_order  />
+          <Card_order  />
+          <Card_order  />
+          <Card_order  />
         </div>
         <div className="py-5 ">
           <button className="text-3xl text-start font-bold p-5">
