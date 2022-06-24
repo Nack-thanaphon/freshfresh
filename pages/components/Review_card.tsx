@@ -22,18 +22,17 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="group flex items-center mx-auto">
+          <div className="group sm:flex items-center mx-auto">
             <img
-              className="shrink-0 h-20 w-20 rounded-full "
+              className="shrink-0 h-20 w-20 rounded-full m-5 mx-auto"
               src="https://scontent.fbkk2-5.fna.fbcdn.net/v/t39.30808-6/289302849_592263558992497_2456027617632802949_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG0AX0rg2hQ7VlGfuJdk8ySJj3uHrkOxzsmPe4euQ7HO6NkMj0PZt_OXu7LXh5nnGH2_ONtCdEvDjkcZkGct6V7&_nc_ohc=YW5Atl5h23sAX8mSI7Q&_nc_ht=scontent.fbkk2-5.fna&oh=00_AT8wQAbve_kWLLUDOCsV-5MIYD9PWbWh5BWGeVZcbKPVfg&oe=62BAFC3E"
               alt=""
             />
-            <div className="ltr:ml-3 rtl:mr-3 px-10">
-              <p className="text-xs text-lg font-bold text-slate-700 mb-3 text-start group-hover:text-slate-900">
-                " ร้านอาหารอร่อยมากๆเลยครับ บริการเยี่ยม พนักงานน่ารัก
-                ราคาไม่แพง "
+            <div className=" px-10 sm:text-start text-center">
+              <p className="text-xs font-bold text-slate-700 mb-3 p-0 m-0 group-hover:text-slate-900">
+                " ร้านอาหารอร่อยมากๆเลยครับ บริการเยี่ยม พนักงานน่ารักราคาไม่แพง "
               </p>
-              <p className="text-sm font-medium text-slate-500 text-start group-hover:text-slate-700">
+              <p className="text-sm font-medium text-slate-500  group-hover:text-slate-700">
                 ธนพล กัลปพฤกษ์
               </p>
             </div>

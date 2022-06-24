@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import Image from "next/dist/client/image";
 import Header from "./components/Header";
 import Card_order from "./components/Card_order";
+import Link from "next/link";
 import Reiview_card from "./components/Review_card";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
@@ -85,40 +86,42 @@ export default function index() {
         </div>
       </div>
       <div className="sm:my-30 sm:p-10">
-        <div className="py-5 ">
-          <button className="text-3xl text-start font-bold p-5">
-            เมนูร้านเรา
-          </button>
+        <div className="flex justify-between py-5 ">
+          <div className="text-3xl text-start font-bold p-5">เมนูร้านเรา</div>
+          <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
+            <Link href="/product">
+              <a>ดูทั้งหมด</a>
+            </Link>
+          </div>
         </div>
         <div className="grid grid-cols-1 m-2 sm:grid-cols-2 gap-3   sm:m-5 text-center">
-          <Card_order  />
-          <Card_order  />
-          <Card_order  />
-          <Card_order  />
-          <Card_order  />
-          <Card_order  />
+          <Card_order />
         </div>
-        <div className="py-5 ">
-          <button className="text-3xl text-start font-bold p-5">
-            โปรโมชั่น
-          </button>
+        <div className="flex justify-between py-5 ">
+          <div className="text-3xl text-start font-bold p-5">โปรโมชั่น</div>
+          <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
+            ดูทั้งหมด
+          </div>
         </div>
         <div className="grid grid-cols-1  m-5 text-center">
           <Card_order />
         </div>
-        <div className="py-5 ">
-          <button className="text-3xl text-start font-bold p-5">
-            ชุดอาหาร
-          </button>
+        <div className="flex justify-between py-5 ">
+          <div className="text-3xl text-start font-bold p-5">BOX-SET</div>
+          <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
+            ดูทั้งหมด
+          </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  m-5 text-center">
           <Card_order />
-          <Card_order />
         </div>
-        <div className="py-10 ">
-          <button className="text-3xl text-start font-bold p-5">
+        <div className="flex justify-between py-5 ">
+          <div className="text-3xl text-start font-bold p-5">
             รีวิวจากลูกค้า
-          </button>
+          </div>
+          <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
+            ดูทั้งหมด
+          </div>
         </div>
         <div className="grid grid-cols-1  m-5 text-center">
           <Reiview_card />
