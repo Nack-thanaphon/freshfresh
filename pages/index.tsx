@@ -12,7 +12,52 @@ export default function index() {
   return (
     <>
       <Header />
-      <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full sm:p-10 sm:mx-5 sm:gap-5 p-3">
+      <div className="flex flex-wrap py-5">
+        <div className="w-full sm:w-8/12 mb-10">
+          <div className="container mx-auto h-full sm:p-10">
+            <nav className="flex px-4 justify-between items-center sm:hidden">
+              <div className="text-4xl font-bold uppercase">
+                Fresh<span className="text-green-400">Fresh</span>.
+              </div>
+              <div>
+                <img
+                  src="https://image.flaticon.com/icons/svg/497/497348.svg"
+                  alt=""
+                  className="w-8"
+                />
+              </div>
+            </nav>
+            <header className="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div className="w-full">
+                <h1 className="text-6xl sm:text-8xl">
+                  เฟรช<span className="text-green-400 ">เฟรช</span>
+                </h1>
+                <p className="text-xs">น้ำสมุนไพรเกรดพรีเมี่ยม</p>
+
+                <div className="w-20 h-2 bg-green-400 my-4"></div>
+                <p className="text-sm mb-10 text-justify">
+                  <b>ร้านขายน้ำสมุนไพรออแกนิค</b>
+                  <br />
+                  เริ่มต้นจากการทำดื่มเองและแจกจ่ายให้กับผู้คนรอบข้างจุดเด่นคือกาารทำสดใหม่ทุกออเดอร์ เลือกสรรวัตุดิบที่สดใหม่
+                  จึงอาจจะต้องมีการออเดอร์มา่กอน 2-3 วัน แต่ก็เป็นเรื่องของกระบวนการลิตที่ เน้นคุณภาพ
+                  มากกว่าปริมาณ รสชาติมีความชื่นชอบในรสชาติ ที่ไม่หวานมาก เน้นสุขภาพดี
+                  เราเลยคิดว่า ถ้าคนที่รักษ์สุขภาพได้ดื่มคงจะเป็นเรื่องดี
+                </p>
+                <button className="bg-green-400 text-white text-lg font-medium px-4 py-1 rounded-md shadow">
+                  อ่านรีวิวของเรา
+                </button>
+              </div>
+            </header>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1587302256613-0612040af6b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          alt="Leafs"
+          className="w-full h-48 object-cover sm:h-screen sm:w-4/12"
+        />
+      </div>
+
+      {/* <div className="grid sm:grid-cols-3 mx-auto sm:px-20 h-full sm:p-10 sm:mx-5 sm:gap-5 p-3">
         <div className="col-span-2 my-auto ">
           <div className="sm:text-9xl invisible sm:visible font-bold">
             เฟรช
@@ -52,7 +97,7 @@ export default function index() {
             height={450}
           />
         </div>
-      </div>
+      </div> */}
       <div className="grid sm:grid-cols-3 py-3 gap-5  sm:px-20 sm:mx-15">
         <div className="shadow-lg py-10 rounded-lg">
           <div className="grid-cols p-5">
@@ -86,8 +131,8 @@ export default function index() {
         </div>
       </div>
       <div className="sm:my-30 sm:p-10">
-        <div className="flex justify-between py-5 ">
-          <div className="text-3xl text-start font-bold p-5">เมนูร้านเรา</div>
+        <div className="flex justify-between py-5 px-2 ">
+          <div className="text-3xl text-start font-bold ">เมนูร้านเรา</div>
           <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
             <Link href="/product">
               <a>ดูทั้งหมด</a>
@@ -98,7 +143,7 @@ export default function index() {
           <Card_order />
         </div>
         <div className="flex justify-between py-5 ">
-          <div className="text-3xl text-start font-bold p-5">โปรโมชั่น</div>
+          <div className="text-3xl text-start font-bold ">โปรโมชั่น</div>
           <div className="text-sm p-1 text-white w-fit my-auto rounded-full bg-green-600">
             ดูทั้งหมด
           </div>

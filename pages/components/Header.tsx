@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex justify-between my-4 sm:m-8">
-      <div className="text-2xl md:text-4xl text-center mx-auto  sm:text-start font-bold tracking-tight ">
+    <div className="sm:flex justify-between my-4 sm:m-8  hidden">
+      <div className="text-2xl md:text-4xl text-center    font-bold tracking-tight ">
         <Link href="/">
-          <a className="text-center">
+          <a className="sm:text-start">
             Fresh<span className="text-green-400 ">Fresh</span>
           </a>
         </Link>
