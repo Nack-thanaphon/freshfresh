@@ -6,7 +6,7 @@ function user({ users }) {
           href="../"
           className="text-dark  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm text-center m-6 pt-5 "
         >
-         กลับ
+          กลับ
         </a>
         <div className="m-3">
           <div className="max-w-100 bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -90,7 +90,7 @@ function user({ users }) {
 export default user;
 
 export async function getStaticPaths() {
-  const resp = await fetch(`https://jsonplaceholder.typicode.com/users/`);
+  const resp = await fetch(`http://localhost:1337/api/products/`);
   const data = await resp.json();
 
   const paths = data.map((user) => {

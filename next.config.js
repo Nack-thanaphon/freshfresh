@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 }
-
 module.exports = {
   eslint: {
     // Warning: This allows production builds to successfully complete even if
@@ -10,7 +9,8 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['images.unsplash.com']
+    domains: ['localhost:1337'],
+    formats: ['image/avif', 'image/webp'],
   },
   pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 }

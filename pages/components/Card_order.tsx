@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Image from "next/image";
 
 function Card_order() {
   const [product, setData] = useState(null);
@@ -8,7 +9,9 @@ function Card_order() {
   useEffect(() => {
     async function fetchAll() {
       setLoading(true);
-      const resp = await fetch("https://jsonplaceholder.typicode.com/users");
+      const resp = await fetch(
+        "http://localhost:1337/api/products?populate=p_img"
+      );
       const data = await resp.json();
       setData(data);
       setLoading(false);
@@ -21,15 +24,20 @@ function Card_order() {
 
   return (
     <>
-      {product.map((data) => (
+      {product.data.map((product) => (
         <>
           <div className="w-full  mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-full">
-            <div className="md:flex" key={data.id}>
+            <div className="md:flex" key={product.id}>
               <div className="md:shrink-0">
                 <img
                   className="h-48 w-full object-cover md:h-full md:w-48"
-                  src="https://images.unsplash.com/photo-1655979921395-2316b22235e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80"
-                  alt="Man looking at item at a store"
+                  width={150}
+                  height={150}
+                  src={
+                    "http://localhost:1337" +
+                    product.attributes.p_img.data.attributes.url
+                  }
+                  alt={product.attributes.p_title}
                 />
               </div>
               <div className="p-8 text-start">
@@ -40,10 +48,12 @@ function Card_order() {
                   href="#"
                   className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
                 >
-                  {data.name}
+                  {product.attributes.p_title}
                 </a>
-                <div className="text-xs text-gray-600">{data.email}</div>
-                <p className="mt-2 text-slate-500">"{data.website}"</p>
+                <div className="text-xs text-gray-600">{product.p_title}</div>
+                <p className="mt-2 text-slate-500">
+                  {product.attributes.p_detail}
+                </p>
                 <div className="text-md text-slate-300 py-3">
                   ยอดขาย 100 ขวด
                 </div>
